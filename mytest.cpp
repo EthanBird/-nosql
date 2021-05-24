@@ -1,6 +1,6 @@
 #include "mytest.h"
 clock_t start,end,step;
-void insert(RedisHandler* r);
+void dotest(RedisHandler* r);
 int main(){
     RedisHandler* r = new RedisHandler("127.0.0.1",6379);
     r->del("zset1");
